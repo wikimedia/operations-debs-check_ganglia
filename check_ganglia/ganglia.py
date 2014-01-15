@@ -46,7 +46,7 @@ class Gmond (object):
         self.server = server
         if port is None:
             port = DEFAULT_GMOND_PORT
-        self.port = port
+        self.port = int(port)
 
     def query(self, host, **kwargs):
         try:
