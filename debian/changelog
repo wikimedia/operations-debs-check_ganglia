@@ -1,0 +1,5 @@
+check-ganglia (0.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Andrew Otto (WMF) <otto@wikimedia.org>  Wed, 15 Jan 2014 21:34:23 +0000

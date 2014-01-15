@@ -1,0 +1,16 @@
+Source: check-ganglia
+Maintainer: Andrew Otto (WMF) <otto@wikimedia.org>
+Section: python
+Priority: optional
+Build-Depends: python, debhelper (>= 8)
+Standards-Version: 3.9.5
+Vcs-Git: https://gerrit.wikimedia.org/r/operations/debs/check_ganglia -b debian
+Vcs-Browser: http://git.wikimedia.org/tree/operations%2Fdebs%2Fcheck_ganglia.git/refs%2Fheads%2Fdebian
+
+Package: check-ganglia
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python3-lxml | python-lxml
+Provides: ${python:Provides}
+Description: check_ganglia plugin for Nagios
+ This is a Nagios plugin that checks values collected by Ganglia. It can poll
+ either gmond or use the interactive query interface provided by gmetad.
